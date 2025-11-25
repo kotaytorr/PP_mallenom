@@ -91,7 +91,7 @@ class ImageApp:
         self.preview_label = ttk.Label(right)
         self.preview_label.pack(fill="both", expand=True, pady=(8,8))
 
-        ttk.Button(right, text="Сохранить предпросмотр", command=self.on_save).pack(fill="x", pady=4)
+        ttk.Button(right, text="Сохранить", command=self.on_save).pack(fill="x", pady=4)
         ttk.Label(right, text="Параметры:").pack(anchor="w", pady=(8,0))
         self.params_text = tk.Text(right, height=8, wrap="word")
         self.params_text.pack(fill="both", pady=(4,0))
